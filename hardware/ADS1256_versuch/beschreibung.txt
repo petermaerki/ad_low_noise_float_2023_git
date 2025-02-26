@@ -1,0 +1,18 @@
+https://www.aliexpress.com/item/1005005935627438.html?
+
+
+Description
+Report Item
+Overview:
+   The complete ADS1256 application circuit module.
+   Onboard Boost boost circuit, 3.3V LDO and 5.0V LDO, can be externally powered from a single supply.
+   The power supply and digital level range: 1.8V - 5.5V (default 3.3V).
+   Onboard low temperature ticket reference.
+   Single-ended or differential inputs can be used. Input attenuation can be configured. By default, there is no attenuation (partial pressure resistance air welding).
+   The onboard crystal frequency is 7.680MHz.
+   The analog signal input interface connector is MX3.0-16Pin.
+   Four-layer FR4 PCB board that complies with ROHS.
+   
+Note:
+1. The onboard default is 3.3V digital power supply for the ADS1256. When connecting to a 1.8V controller, it is necessary to disconnect R24 and supply “3.3V OUT” and “VIN” at the same time (1.8V). (please refer to the schematic diagram or schematic for the principle of setup)
+2. The allowable VIN voltage range is: 1.8V-5.5V DC.

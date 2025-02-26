@@ -1,0 +1,6 @@
+Relais, beide Seiten Freilauf mit MMBD1503A
+GND loetaugen auf net gnd
+C201 neu 6.8 mF
+C203 GND besser anschliessen
+
+kleinere und mehr Kondensatoren bei ADC?

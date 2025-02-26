@@ -1,0 +1,35 @@
+2	306-SM03BSRSSTBLFSNP  digikey 	
+SM03B-SRSS-TB
+2	580-MEJ1S0509SC	digikey 811-3187-5-ND   	
+MEJ1S0509SC
+2	647-UVP1E222MHD	digikey 493-12445-ND	UVP1E222MHD
+2	647-UVP0J682MHD   digikey		493-12440-ND	UVP0J682MHD
+2	1590XXPR
+
+
+Pro Gerät :
+
+
+4 Stück Stiftenleiste 2x1
+1 Stück Stiftenleiste 2x2
+1 Stück Stiftenleiste 4x2
+1 Stück Stiftenleiste 5x2
+1 Stück Stiftenleiste 6x2
+1 Stück Stiftenleiste 7x2
+
+einer	10
+
+
+
+
+für adapter AD3
+4 Stück ? 32x1
+
+15 Stück 2x1
+20 Stück Buchsenleiste 2x1 für Bauteile
+3 Stück Stiftenleiste 2x2
+
+
+calibration
+1 Stück Stiftenleiste 8x2
+

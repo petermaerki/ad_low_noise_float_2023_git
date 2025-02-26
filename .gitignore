@@ -1,0 +1,7 @@
+hardware/kicad/pcb_ad_low_noise_float_2023-backups/*.zip
+hardware/kicad/fp-info-cache
+hardware/kicad/*.bak
+*_gitignore*
+**/*.pyc
+.mypy_cache/**
+software/decoder/examples/read_serial2.txt

@@ -1,0 +1,5 @@
+Peter Maerki 2025-08-11_17_38_22
+
+Ich habe meine ruhige Spannungsquelle mit dem voltage divider. Ich messe das Rauschen mit dem preamplifier_noise_2020. Sehr ruhig, viel weniger noise als was ich mit dem AD messe. Wird also vom AD dominiert.
+
+ES gibt ein Hügel bei 5kHz. Ich löte den Schaltregler 9V aus und nutze ein externes linieares supply. Genau gleich. Ist also nicht der Schaltregler.

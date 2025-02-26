@@ -1,0 +1,58 @@
+name: Build Pico Firmware
+
+on:
+  workflow_dispatch:
+  push:
+    # branches:
+    #   - main
+    #   - hmaerki/evaluation_software
+    paths:
+      - software/pico/**  
+      - .github/workflows/software_pico_build_uf2.yaml
+  pull_request:
+    # branches:
+    #   - main
+    paths:
+      - software/pico/**
+      - .github/workflows/software_pico_build_uf2.yaml
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y cmake gcc-arm-none-eabi build-essential
+          ninja --version
+          cmake --version
+          gcc --version
+
+      - name: Set up Pico SDK
+        run: |
+          git clone -b 2.1.1 https://github.com/raspberrypi/pico-sdk.git
+          cd pico-sdk
+          git submodule update --init
+          echo "PICO_SDK_PATH=$(pwd)" >> $GITHUB_ENV
+
+      - name: Configure CMake
+        run: |
+          mkdir -p software/pico/build
+          cd software/pico/build
+          cmake .. -DPICO_SDK_PATH=${{ env.PICO_SDK_PATH }} -G Ninja
+
+      - name: Build project
+        run: |
+          cd software/pico/build
+          ninja
+
+      - name: Upload UF2 artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ad_low_noise_float_2023.uf2
+          path: software/pico/build/ad_low_noise_float_2023.uf2

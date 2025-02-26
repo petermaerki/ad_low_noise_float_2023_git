@@ -1,0 +1,51 @@
+[project]
+name = "ad_low_noise_float_2023_decoder"
+description = "ad_low_noise_float_2023_decoder for ad_low_noise_float_2023_git"
+requires-python = ">=3.7.6"
+dynamic = ["version"]
+dependencies = [
+  # https://github.com/nanophysics/compact_2012/blob/master/requirements.txt
+  "numpy>=1.21.1",
+]
+
+[build-system]
+requires = [
+    "setuptools>=42",
+    "pybind11>=2.10.0",
+]
+build-backend = "setuptools.build_meta"
+
+
+[tool.cibuildwheel]
+test-command = "python {project}/tests/test.py"
+test-skip = "*universal2:arm64"
+test-requires = "numpy>=1.21.1"
+
+# See: https://cibuildwheel.pypa.io/en/stable/options/
+build = [
+  # "cp39-*", "cp312-*", "cp313-*",
+  # Only build on CPython 3.7 and 3.13
+  "cp37-*", "cp313-*",
+]
+skip = [
+  # Skip CPython 3.6
+  "cp36-*",
+  # Skip 32-bit builds
+  "*-win32", "*_i686",
+  # Skip musllinux
+  "*-musllinux_*",
+  # Disable building PyPy wheels on all platforms
+  "pp*",
+]
+
+[tool.ruff]
+target-version = "py313"
+
+[tool.ruff.lint]
+extend-select = [
+  "B",   # flake8-bugbear
+  "I",   # isort
+  "PGH", # pygrep-hooks
+  "RUF", # Ruff-specific
+  "UP",  # pyupgrade
+]

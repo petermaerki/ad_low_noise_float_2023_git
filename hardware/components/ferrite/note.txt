@@ -1,0 +1,11 @@
+Peter Maerki 2025-08-18_14_19_25
+
+
+Wuerth 782115020030
+
+5 pieces around BNC center wire. Shrinking tube D6.4 L22, glue.
+2 pieces on shield wires
+2 piece on M3 bolts next to connectors.
+
+Ferrite reduces noise: example: 2V at input, gain 2. When ferrites are attached the noise level drops.
+When the ferrite cores are mounted, the noise level decreases. Most likely, the ferrites absorb high-frequency energy. Without ferrites, the enclosure together with the standoffs and the circuit board may enter into resonance. 

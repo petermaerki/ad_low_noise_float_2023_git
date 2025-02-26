@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"cmake.sourceDirectory": "${workspaceFolder}/software/pico",
+		"files.associations": {
+			"cstdint": "cpp"
+		}
+	}
+}

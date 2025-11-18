@@ -1,4 +1,4 @@
-name: Build Decoder Wheels (Obsolete)
+name: Decoder - Build wheels and push to pypi.org
 
 on:
   workflow_dispatch:

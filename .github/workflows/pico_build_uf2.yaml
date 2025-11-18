@@ -1,4 +1,4 @@
-name: Build Pico Firmware
+name: Pico Firmware - Build uf2
 
 on:
   workflow_dispatch:

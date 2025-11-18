@@ -1,4 +1,4 @@
-name: Build Decoder Pip (Obsolete)
+name: Decoder - Build pip (Dummy)
 
 on:
   workflow_dispatch:

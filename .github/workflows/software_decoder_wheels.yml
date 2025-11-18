@@ -1,4 +1,4 @@
-name: Build Decoder Wheels
+name: Build Decoder Wheels (Obsolete)
 
 on:
   workflow_dispatch:
